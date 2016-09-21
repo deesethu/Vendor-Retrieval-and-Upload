@@ -1,0 +1,23 @@
+PROBLEM STATEMENT
+
+A vendor is an entity defined with the following attributes:
+Vendor Name
+Email address
+Mobile number 
+Service Tax Number
+TDS percentage
+You will need to build a vendor list and editing module. Here the requirements:
+Create a screen where the vendors are listed. This screen will show the following:
+Table of existing vendors with the Vendor Name, email address and phone number
+The vendor name will be a hyperlink which will take to edit vendor details screen described below.
+A 'Add Vendor' button which will take to the add vendor screen described below
+The Add Vendor screen will be a form which will allow the user to enter the details mentioned above. On submitting the form, the vendor details would be added to the database after validation. If the validations fail, the screen is shown with data re-populated with error messages. The validations are as follows:
+Vendor Name - Should be a non empty string with max length of 50 characters.
+Email Address - Should be non empty and a valid email address.
+Mobile Number - 10 digits
+Service Tax Number - 14 digits
+Tax Percentage - Valid float number
+On successful submission of the add vendor screen, the user will be returned to 'Vendor List' page.
+3. The Edit vendor screen has the same validation as 'Add Vendor' screen. This form will be pre-filled with the existing data for the vendor. On successful submission, the data for the vendor will be updated and user will be shown the 'Vendor List' page. 
+
+This functionality has to be coded in PHP/MySQL. Used the codeigniter framework for this functionality.
